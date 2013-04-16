@@ -19,7 +19,7 @@ if (args.help) {
 }
 
 if (!args.file) {
-  args.file = path.resolve(__filename,'../../lib/sampleMp3/sample.mp3');}
+  args.file = path.resolve(__filename,'../../lib/sampleMp3/sample.mp3');
 }
 
 app(args.file);
