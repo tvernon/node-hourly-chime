@@ -1,0 +1,25 @@
+{
+  "author": "Tyler Vernon <tvernon@nearinfinity.com>",
+  "name": "hourly-chime",
+  "version": "0.0.1",
+  "description" : "Plays a specified mp3 file every hour, on the hour.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tvernon/node-hourly-chime.git"
+  },
+  "keywords": [
+    "alarm",
+    "mp3",
+    "hourly"
+  ],
+  "dependencies": {
+    "lame": "~1.0.2",
+    "speaker": "~0.0.9"
+  },
+  "engines" : {
+    "node" : "*"
+  },
+  "bin": {
+    "hourly-chime": "./bin/hourly-chime.js"
+  }
+}
