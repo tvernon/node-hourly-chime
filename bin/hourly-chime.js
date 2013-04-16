@@ -2,6 +2,7 @@
 
 var optimist = require('optimist');
 var app = require('../lib/app');
+var path = require('path');
 
 var args = optimist
   .alias('h', 'help')
@@ -18,7 +19,7 @@ if (args.help) {
 }
 
 if (!args.file) {
-  args.file = 'lib/sampleMp3/sample.mp3';
+  args.file = path.resolve(__filename,'../../lib/sampleMp3/sample.mp3');}
 }
-console.log(args.file);
+
 app(args.file);
